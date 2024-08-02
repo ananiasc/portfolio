@@ -6,9 +6,5 @@ export const routes: Routes = [
   {
     path: '',
     component: HomePageComponent
-  },
-  {
-    path: 'work-experience-detail',
-    component: WorkExperienceDetailComponent
   }
 ]
