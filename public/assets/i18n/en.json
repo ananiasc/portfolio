@@ -6,5 +6,34 @@
   "portfolio": "Portfolio",
   "workExperience": "Work Experience",
   "aboutMe": "About me",
-  "educationHistory": "Education History"
+  "educationHistory": "Education History",
+  "myExperience": "Work Experience",
+  "skills": "Skills",
+  "back": "Back",
+  "experiences": [
+    {
+      "title": "Full Stack Developer Freelancer",
+      "period": "February 2024 – Present",
+      "companyName": "",
+      "companyDescription": "",
+      "experienceDescription": "I added value by integrating E-Rede credit card payment methods for Elevar.",
+      "skills": "Java Development, Node.js, Angular (Framework), AngularJS, SQL Server, Spring Boot, Git, GitLab."
+    },
+    {
+      "title": "Full Stack Developer at Elevar",
+      "period": "October 2022 – January 2024",
+      "companyName": "Elevar Commerce",
+      "companyDescription": "is a company that offers an e-commerce platform and solutions to help businesses expand and succeed online.",
+      "experienceDescription": "I contributed to the development of personalized promotions, section banners working with Java, Angular, and SQL Server, created a freight microservice improving user experience using Node documented with Swagger, and enhanced software delivery processes through Merge Request pipelines.",
+      "skills": "Application Programming Interface (API), Java, Ionic Framework, Node.js, Git, REST API, Continuous Integration and Continuous Delivery (CI/CD), AngularJS, Spring Boot, Angular (Framework), Microsoft SQL Server."
+    },
+    {
+      "title": "Web Development Intern at Elevar",
+      "period": "February 2022 – September 2022",
+      "companyName": "Elevar Commerce",
+      "companyDescription": "is a company that offers an e-commerce platform and solutions to help businesses expand and succeed online.",
+      "experienceDescription": "As an intern, I experienced working with Agile Methodologies, code versioning, teamwork, and JavaScript and TypeScript technologies using Angular, Ionic, and Node, as well as Java on the backend.",
+      "skills": "Java, Ionic Framework, Git, Angular (Framework), AngularJS, Microsoft SQL Server."
+    }
+  ]
 }
