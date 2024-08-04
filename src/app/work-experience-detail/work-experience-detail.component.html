@@ -9,55 +9,26 @@
 >
   <div class="bg-gray-800 p-6 rounded-lg shadow-lg sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-2xl 2xl:max-w-3xl">
     <div class="flex justify-between items-start border-l-4 border-purple-600 pl-4 mb-4">
-      <h2 class="text-2xl font-bold text-purple-600">Minha experiência</h2>
+      <h2 class="text-2xl font-bold text-purple-600">{{ 'myExperience' | translate }}</h2>
       <button (click)="toggleModal()" class="bg-purple-700 hover:bg-purple-600 transition-colors duration-500 text-white font-bold py-2 px-4 rounded-full">
-        Voltar
+        {{ 'back' | translate }}
       </button>
     </div>
 
-    <div class="space-y-4 space-x-4 mb-3">
+    <div class="space-y-4 space-x-4 mb-3" *ngFor="let experience of experiences">
       <div>
-        <h3 class="text-xl font-semibold">Desenvolvedor Full Stack Freelancer</h3>
-        <p class="text-gray-400">Fevereiro 2024 – Hoje</p>
+        <h3 class="text-xl font-semibold">{{ experience.title }}</h3>
+        <p class="text-gray-400">{{ experience.period }}</p>
       </div>
-      <p class="text-justify">
-        Eu pude agregar valor realizando integração de meio de pagamento com cartão de crédito E-Rede para a empresa Elevar.
-      </p>
-      <div>
-        <p class="font-semibold">Competências:</p>
-        <p>Desenvolvimento Java, Node.js, Angular (Framework), Angular Js, SQL Server, Spring Boot, Git, GitLab</p>
-      </div>
-    </div>
-    <div class="space-y-4 space-x-4 mb-3">
-      <div>
-        <h3 class="text-xl font-semibold">Desenvolvedor Full Stack na Elevar</h3>
-        <p class="text-gray-400">Outubro 2022 – Janeiro 2024</p>
-      </div>
-      <p class="text-justify">
-        A <span class="font-semibold">Elevar Commerce</span> é uma empresa que oferece plataforma de e-commerce e soluções para ajudar negócios a expandir e ter sucesso online.
+      <p class="text-justify" *ngIf="experience.companyName != ''">
+        A <span class="font-semibold">{{ experience.companyName }}</span> {{ experience.companyDescription }}
       </p>
       <p class="text-justify">
-        Pude contribuir com o desenvolvimento de promoções personalizadas, banners de seção trabalhando com Java, Angular e SQL Server, criação de micro serviço de frete melhorando a experiência do usuário através do Node documentado com Swagger e aprimorei os processos de entrega de software através de pipelines de Merge Request.
+        {{ experience.experienceDescription }}
       </p>
       <div>
-        <p class="font-semibold">Competências:</p>
-        <p>Interface de programação de aplicativos (API), Java, Ionic Framework, Node.js, Git, API REST, Integração e entrega contínuas (CI/CD), Angular Js, Spring Boot, Angular (Framework), AngularJS, Microsoft SQL Server</p>
-      </div>
-    </div>
-    <div class="space-y-4 space-x-4 mb-3">
-      <div>
-        <h3 class="text-xl font-semibold">Estágio em Desenvolvimento Web na Elevar</h3>
-        <p class="text-gray-400">Fevereiro 2022 – Setembro 2022</p>
-      </div>
-      <p class="text-justify">
-        A <span class="font-semibold">Elevar Commerce</span> é uma empresa que oferece plataforma de e-commerce e soluções para ajudar negócios a expandir e ter sucesso online.
-      </p>
-      <p class="text-justify">
-        Como estagiário pude experienciar o trabalho com Metodologias Ágeis, versionamento de código, trabalho em equipe e tecnologias JavaScript e TypeScript utilizando Angular, Ionic e Node, e também com Java na parte de backend.
-      </p>
-      <div>
-        <p class="font-semibold">Competências:</p>
-        <p>Java, Ionic Framework, Git, Angular (Framework), AngularJS, Microsoft SQL Server</p>
+        <p class="font-semibold">{{ 'skills' | translate }}:</p>
+        <p>{{ experience.skills }}</p>
       </div>
     </div>
   </div>
