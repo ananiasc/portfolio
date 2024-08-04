@@ -14,14 +14,30 @@ interface Experience {
   selector: 'app-work-experience-detail',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    TranslateModule, 
   ],
   templateUrl: './work-experience-detail.component.html'
 })
 export class WorkExperienceDetailComponent {
   showModal: boolean = false;
+  experiences: Experience[] = [];
+
+  constructor(
+    private translate: TranslateService,
+  ) {
+    this.toggleLanguage();
+  }
 
   public toggleModal(){
     this.showModal = !this.showModal;
+    if(this.showModal)
+      this.toggleLanguage();
+  }
+
+  private toggleLanguage() {
+    this.translate.get('experiences').subscribe((res: []) => {
+      this.experiences = res;
+    });
   }
 }
