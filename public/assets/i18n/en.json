@@ -35,5 +35,25 @@
       "experienceDescription": "As an intern, I experienced working with Agile Methodologies, code versioning, teamwork, and JavaScript and TypeScript technologies using Angular, Ionic, and Node, as well as Java on the backend.",
       "skills": "Java, Ionic Framework, Git, Angular (Framework), AngularJS, Microsoft SQL Server."
     }
+  ],
+  "educationalHistory": [
+    {
+      "title": "Distributed Software Architecture",
+      "institution": "PUC Minas",
+      "period": "March 2024 – Present",
+      "educationDescription": "This course plays a strategic role in the professional training of those aiming for a career as a software architect. It is designed to provide skills and competencies for the advanced training of professionals involved in the conception, construction, and implementation of software using software architecture aspects in distributed environments."
+    },
+    {
+      "title": "Bachelor's Degree in Computer Science",
+      "institution": "Federal Institute of Education, Science and Technology of Ceará",
+      "period": "2019 – 2023",
+      "educationDescription": "The Bachelor's degree in Computer Science aims to train professionals with scientific, technical, ethical, and humanistic foundations, consistent with the specificities of the field of Computer Science, combined with practical training through project development and mastery of computational technologies. The Computer Science graduate works in areas related to entrepreneurship, research, consulting, public, private, and third sector organizations, and academic careers."
+    },
+    {
+      "title": "Technical Degree in Information Technology",
+      "institution": "EEEP Professora Luíza de Teodoro Vieira",
+      "period": "2014 – 2016",
+      "educationDescription": "The objective is to train mid-level professionals to work in the creation, production, and installation of communication and information technologies, integrating education, work, science, and technology. The training aims to promote continuous development, offering teaching situations that align labor skills with regional reality, enabling professionals to perform their activities efficiently. Additionally, it seeks to raise awareness about the importance of continuous training and enable the certification of professionally acquired knowledge for the continuation of studies."
+    }
   ]
 }

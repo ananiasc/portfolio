@@ -35,5 +35,25 @@
       "experienceDescription": "Como estagiário pude experienciar o trabalho com Metodologias Ágeis, versionamento de código, trabalho em equipe e tecnologias JavaScript e TypeScript utilizando Angular, Ionic e Node, e também com Java na parte de backend.",
       "skills": "Java, Ionic Framework, Git, Angular (Framework), AngularJS, Microsoft SQL Server."
     }
+  ],
+  "educationalHistory": [
+    {
+      "title": "Arquitetura de Software Distribuído",
+      "institution": "PUC Minas",
+      "period": "Março 2024 – Hoje",
+      "educationDescription": "Este curso tem um papel estratégico na formação profissional de quem almeja uma carreira como arquiteto de software. Ele foi idealizado de modo a prover habilidades e competências para formação avançada dos profissionais que atuam na concepção, construção e implantação de softwares que usam aspectos de arquitetura de software em ambientes distribuídos."
+    },
+    {
+      "title": "Bacharel em Ciência da Computação",
+      "institution": "Instituto Federal de Educação, Ciência e Tecnologia do Ceará",
+      "period": "2019 – 2023",
+       "educationDescription": "O curso de Bacharelado em Ciência da Computação visa a formação de profissionais em bases científica, técnica, ética e humanista, condizentes com a especificidade da área de Ciência da Computação, aliado à formação prática, através do desenvolvimento de projetos e do domínio de tecnologias computacionais. O bacharel em Ciência da Computação atua em áreas vinculadas a empreendedorismo, pesquisa, consultoria, organizações públicas, privadas e do terceiro setor e atuação em carreira acadêmica."
+    },
+    {
+      "title": "Técnico em Informática",
+      "institution": "EEEP Professora Luíza de Teodoro Vieira",
+      "period": "2014 – 2016",
+      "educationDescription": "O objetivo é formar profissionais de nível médio para atuar na criação, produção e instalação de tecnologias de comunicação e informação, articulando educação, trabalho, ciência e tecnologia. A formação deve promover o desenvolvimento contínuo, oferecendo situações de ensino que alinhem competências laborais com a realidade regional, capacitando os profissionais para desempenhar suas atividades eficientemente. Além disso, busca-se conscientizar sobre a importância da formação contínua e possibilitar a certificação de conhecimentos adquiridos profissionalmente para a continuidade dos estudos."
+    }
   ]
 }
