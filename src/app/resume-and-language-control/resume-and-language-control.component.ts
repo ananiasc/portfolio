@@ -12,5 +12,6 @@ export class ResumeAndLanguageControlComponent {
 
   translateText(language: string) {
     this.translate.use(language);
+    document.documentElement.lang = language.toLowerCase();
   }
 }
