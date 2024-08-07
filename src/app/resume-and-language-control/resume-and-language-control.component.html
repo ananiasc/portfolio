@@ -1,6 +1,12 @@
 <div class="bg-gray-800 p-4 rounded-full text-center">
   <div class="flex justify-between items-center">
-    <button class="bg-gray-700 text-white px-4 py-2 rounded-full">{{'resume' | translate }}</button>
+    <a 
+      href="https://drive.google.com/u/0/uc?id=1lDsQe7WFNQW3MLj6cVpVijoTpxJv3SAx&export=download"
+      target="_blank" 
+      class="bg-gray-700 text-white px-4 py-2 rounded-full"
+    >
+      {{'resume' | translate }}
+    </a>
     <div class="flex space-x-1">
       <button class="bg-gray-700 text-white px-5 py-2 rounded-l-full" (click)="translateText('en')">EN</button>
       <button class="bg-gray-700 text-white px-5 py-2 rounded-r-full" (click)="translateText('pt-BR')">PT</button>
