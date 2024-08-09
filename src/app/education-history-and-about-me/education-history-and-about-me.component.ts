@@ -17,7 +17,7 @@ export class EducationHistoryAndAboutMeComponent {
   @ViewChild(EducationHistoryDetailComponent) educationDetail!: EducationHistoryDetailComponent;
   @ViewChild(AboutMeDetailComponent) aboutMeDetail!: AboutMeDetailComponent;
 
-  toggleModal() {
+  toggleModaEducationDetail() {
     this.educationDetail.toggleModal();
   }
 
