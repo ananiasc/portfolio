@@ -1,5 +1,5 @@
 {
-  "hiImAnanias": "Olá, Eu sou Ananias",
+  "hiImAnanias": "Olá, Eu sou o Ananias",
   "fullStackDeveloper": "Desenvolvedor Full Stack",
   "resume": "CURRÍCULO",
   "yearsExperience": "Anos de Experiência",
@@ -54,5 +54,6 @@
       "period": "2014 – 2016",
       "educationDescription": "O objetivo é formar profissionais de nível médio para atuar na criação, produção e instalação de tecnologias de comunicação e informação, articulando educação, trabalho, ciência e tecnologia. A formação deve promover o desenvolvimento contínuo, oferecendo situações de ensino que alinhem competências laborais com a realidade regional, capacitando os profissionais para desempenhar suas atividades eficientemente. Além disso, busca-se conscientizar sobre a importância da formação contínua e possibilitar a certificação de conhecimentos adquiridos profissionalmente para a continuidade dos estudos."
     }
-  ]
+  ],
+  "about-me-description": "Desde cedo, sempre fui apaixonado por tecnologia. Aos 13 anos, vendo meu irmão programar, mergulhei no mundo da T.I. e nunca mais olhei para trás. Hoje, com 25 anos, sou desenvolvedor full stack, uma jornada que comecei em 2022 e que abraço com entusiasmo e dedicação. Sou Bacharel em Ciência da Computação pelo IFCE e atualmente estou cursando Arquitetura de Software Distribuído pela PUC Minas. Além disso, sou técnico em informática, uma base que solidificou meu amor pela programação desde os primeiros passos. Adoro desafios e transformar problemas do mundo real em soluções codificadas. Minha paixão por resolver dilemas complexos é evidente em cada projeto que assumo. O café é meu companheiro constante, alimentando minhas longas horas de estudo e trabalho. Nas horas vagas, gosto de me desconectar jogando com amigos ou assistindo a partidas de basquete torcendo pelo meu vibrante Boston Celtics"
 }
