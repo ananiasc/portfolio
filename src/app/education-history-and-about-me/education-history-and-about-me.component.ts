@@ -21,7 +21,7 @@ export class EducationHistoryAndAboutMeComponent {
     this.educationDetail.toggleModal();
   }
 
-  toggleModalAboutMeDetail() {
-    this.aboutMeDetail.toggleModal();
+  openModalAboutMeDetail() {
+    this.aboutMeDetail.openModal();
   }
 }

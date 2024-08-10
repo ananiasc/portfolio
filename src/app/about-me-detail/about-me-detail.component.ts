@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener, signal } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 interface Education {
@@ -19,9 +19,25 @@ interface Education {
   templateUrl: './about-me-detail.component.html'
 })
 export class AboutMeDetailComponent {
-  showModal: boolean = false;
+  showModal = signal(false);
 
-  public toggleModal(){
-    this.showModal = !this.showModal;
+  public openModal(){
+    this.showModal.set(true);
+  }
+
+  closeModal() {
+    this.showModal.set(false);
+  }
+
+  closeModalOnOutSideClick(event: MouseEvent) {
+    const tartegElement = event.target as HTMLElement;
+    if(tartegElement.classList.contains('fixed')) {
+      this.closeModal();
+    }
+  }
+  
+  @HostListener('document:keydown.escape', ['$event']) 
+  onKeydownHandler(event: KeyboardEvent) {
+    this.closeModal();
   }
 }
