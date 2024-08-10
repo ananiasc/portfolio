@@ -26,19 +26,19 @@ export class WorkExperienceDetailComponent {
   constructor(
     private translate: TranslateService,
   ) {
-    this.toggleLanguage();
+    this.updateByLanguage();
   }
 
   public openModal() {
     this.showModal.set(true);
-    this.toggleLanguage();
+    this.updateByLanguage();
   }
 
   closeModal() {
     this.showModal.set(false);
   }
 
-  private toggleLanguage() {
+  private updateByLanguage() {
     this.translate.get('experiences').subscribe((res: []) => {
       this.experiences = res;
     });

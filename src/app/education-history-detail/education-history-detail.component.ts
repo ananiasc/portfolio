@@ -25,15 +25,15 @@ export class EducationHistoryDetailComponent {
   constructor(
     private translate: TranslateService,
   ) {
-    this.toggleLanguage();
+    this.updateByLanguage();
   }
 
   public openModal(){
     this.showModal.set(true);
-    this.toggleLanguage();
+    this.updateByLanguage();
   }
 
-  private toggleLanguage() {
+  private updateByLanguage() {
     this.translate.get('educationalHistory').subscribe((res: []) => {
       this.educations = res;
     });
