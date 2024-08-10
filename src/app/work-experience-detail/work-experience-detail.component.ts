@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener, signal } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 interface Experience {
   title: string,
@@ -20,7 +20,7 @@ interface Experience {
   templateUrl: './work-experience-detail.component.html'
 })
 export class WorkExperienceDetailComponent {
-  showModal: boolean = false;
+  showModal = signal(false);
   experiences: Experience[] = [];
 
   constructor(
@@ -29,15 +29,30 @@ export class WorkExperienceDetailComponent {
     this.toggleLanguage();
   }
 
-  public toggleModal(){
-    this.showModal = !this.showModal;
-    if(this.showModal)
-      this.toggleLanguage();
+  public openModal() {
+    this.showModal.set(true);
+    this.toggleLanguage();
+  }
+
+  closeModal() {
+    this.showModal.set(false);
   }
 
   private toggleLanguage() {
     this.translate.get('experiences').subscribe((res: []) => {
       this.experiences = res;
     });
+  }
+
+  closeModalOnOutSideClick(event: MouseEvent) {
+    const tartegElement = event.target as HTMLElement;
+    if(tartegElement.classList.contains('fixed')) {
+      this.closeModal();
+    }
+  }
+  
+  @HostListener('document:keydown.escape', ['$event']) 
+  onKeydownHandler(event: KeyboardEvent) {
+    this.closeModal();
   }
 }
