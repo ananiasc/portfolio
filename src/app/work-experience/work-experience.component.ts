@@ -14,7 +14,7 @@ import { WorkExperienceDetailComponent } from "../work-experience-detail/work-ex
 export class WorkExperienceComponent {
   @ViewChild(WorkExperienceDetailComponent) workDetail!: WorkExperienceDetailComponent;
 
-  toggleModal() {
-    this.workDetail.toggleModal();
+  openModal() {
+    this.workDetail.openModal();
   }
 }

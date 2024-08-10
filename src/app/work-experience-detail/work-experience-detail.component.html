@@ -1,16 +1,14 @@
-<div [ngClass]="{
-    'visible opacity-100 scale-100': showModal, 
-    'invisible opacity-0 scale-0': !showModal
-  }" 
-  class="overflow-y-scroll bg-gray-800 bg-opacity-50 transition-opacity duration-500 fixed inset-0 z-10 text-white items-center justify-center min-h-screen px-4 md:px-44 lg:px-60 xl:px-72 2xl:px-144" 
+<div [ngClass]="showModal() ? 'scale-100 opacity-100' : 'scale-0 opacity-0'" 
+  class="overflow-y-scroll bg-gray-800 bg-opacity-50 transition-opacity duration-700 fixed inset-0 z-10 text-white items-center justify-center min-h-screen px-4 md:px-44 lg:px-60 xl:px-72 2xl:px-144" 
   aria-labelledby="modal-title" 
   role="dialog" 
   aria-modal="true"
+  (click)="closeModalOnOutSideClick($event)"
 >
   <div class="bg-gray-800 p-6 rounded-lg shadow-lg sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-2xl 2xl:max-w-3xl">
     <div class="flex justify-between items-start border-l-4 border-purple-600 pl-4 mb-4">
       <h2 class="text-2xl font-bold text-purple-600">{{ 'myExperience' | translate }}</h2>
-      <button (click)="toggleModal()" class="bg-purple-700 hover:bg-purple-600 transition-colors duration-500 text-white font-bold py-2 px-4 rounded-full">
+      <button (click)="closeModal()" class="bg-purple-700 hover:bg-purple-600 transition-colors duration-500 text-white font-bold py-2 px-4 rounded-full">
         <img src="/icons/close-icon.png"  class="h-4 w-4 m-1"  alt="close icon">
       </button>
     </div>
