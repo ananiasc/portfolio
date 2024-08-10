@@ -8,20 +8,20 @@ import { AboutMeDetailComponent } from '../about-me-detail/about-me-detail.compo
   standalone: true,
   imports: [
     TranslateModule, 
-    EducationHistoryDetailComponent,
     AboutMeDetailComponent,
+    EducationHistoryDetailComponent,
   ],
   templateUrl: './education-history-and-about-me.component.html'
 })
 export class EducationHistoryAndAboutMeComponent {
-  @ViewChild(EducationHistoryDetailComponent) educationDetail!: EducationHistoryDetailComponent;
   @ViewChild(AboutMeDetailComponent) aboutMeDetail!: AboutMeDetailComponent;
-
-  toggleModaEducationDetail() {
-    this.educationDetail.toggleModal();
-  }
+  @ViewChild(EducationHistoryDetailComponent) educationDetail!: EducationHistoryDetailComponent;
 
   openModalAboutMeDetail() {
     this.aboutMeDetail.openModal();
+  }
+
+  openModaEducationDetail() {
+    this.educationDetail.openModal();
   }
 }

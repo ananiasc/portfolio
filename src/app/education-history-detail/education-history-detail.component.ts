@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener, signal } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 interface Education {
@@ -19,7 +19,7 @@ interface Education {
   templateUrl: './education-history-detail.component.html'
 })
 export class EducationHistoryDetailComponent {
-  showModal: boolean = false;
+  showModal = signal(false);
   educations: Education[] = [];
 
   constructor(
@@ -28,15 +28,30 @@ export class EducationHistoryDetailComponent {
     this.toggleLanguage();
   }
 
-  public toggleModal(){
-    this.showModal = !this.showModal;
-    if(this.showModal)
-      this.toggleLanguage();
+  public openModal(){
+    this.showModal.set(true);
+    this.toggleLanguage();
   }
 
   private toggleLanguage() {
     this.translate.get('educationalHistory').subscribe((res: []) => {
       this.educations = res;
     });
+  }
+
+  closeModal() {
+    this.showModal.set(false);
+  }
+
+  closeModalOnOutSideClick(event: MouseEvent) {
+    const tartegElement = event.target as HTMLElement;
+    if(tartegElement.classList.contains('fixed')) {
+      this.closeModal();
+    }
+  }
+  
+  @HostListener('document:keydown.escape', ['$event']) 
+  onKeydownHandler(event: KeyboardEvent) {
+    this.closeModal();
   }
 }
