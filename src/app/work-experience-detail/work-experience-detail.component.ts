@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component, HostListener, signal } from '@angular/core';
+import { NgClass, NgFor, NgIf } from '@angular/common';
+import { Component, HostListener } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 interface Experience {
   title: string,
@@ -14,13 +14,15 @@ interface Experience {
   selector: 'app-work-experience-detail',
   standalone: true,
   imports: [
-    CommonModule,
+    NgClass,
+    NgIf,
+    NgFor,
     TranslateModule, 
   ],
   templateUrl: './work-experience-detail.component.html'
 })
 export class WorkExperienceDetailComponent {
-  showModal = signal(false);
+  showModal: boolean = false;
   experiences: Experience[] = [];
 
   constructor(
@@ -30,12 +32,12 @@ export class WorkExperienceDetailComponent {
   }
 
   public openModal() {
-    this.showModal.set(true);
+    this.showModal = true;
     this.updateByLanguage();
   }
 
   closeModal() {
-    this.showModal.set(false);
+    this.showModal = false;
   }
 
   private updateByLanguage() {

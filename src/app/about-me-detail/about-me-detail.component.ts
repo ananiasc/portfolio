@@ -1,32 +1,25 @@
-import { CommonModule } from '@angular/common';
-import { Component, HostListener, signal } from '@angular/core';
+import { NgClass } from '@angular/common';
+import { Component, HostListener } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-
-interface Education {
-  title: string,
-  institution: string,
-  period: string,
-  educationDescription: string,
-}
 
 @Component({
   selector: 'app-about-me-detail',
   standalone: true,
   imports: [
-    CommonModule,
+    NgClass,
     TranslateModule, 
   ],
   templateUrl: './about-me-detail.component.html'
 })
 export class AboutMeDetailComponent {
-  showModal = signal(false);
+  showModal: boolean = false;
 
   public openModal(){
-    this.showModal.set(true);
+    this.showModal = true;
   }
 
   closeModal() {
-    this.showModal.set(false);
+    this.showModal = false;
   }
 
   closeModalOnOutSideClick(event: MouseEvent) {
