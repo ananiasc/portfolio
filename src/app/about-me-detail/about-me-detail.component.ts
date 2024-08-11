@@ -1,19 +1,12 @@
-import { CommonModule } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { Component, HostListener, signal } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-
-interface Education {
-  title: string,
-  institution: string,
-  period: string,
-  educationDescription: string,
-}
 
 @Component({
   selector: 'app-about-me-detail',
   standalone: true,
   imports: [
-    CommonModule,
+    NgClass,
     TranslateModule, 
   ],
   templateUrl: './about-me-detail.component.html'

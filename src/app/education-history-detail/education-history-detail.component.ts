@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { NgClass, NgFor } from '@angular/common';
 import { Component, HostListener, signal } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
@@ -13,7 +13,8 @@ interface Education {
   selector: 'app-education-history-detail',
   standalone: true,
   imports: [
-    CommonModule,
+    NgClass,
+    NgFor,
     TranslateModule, 
   ],
   templateUrl: './education-history-detail.component.html'

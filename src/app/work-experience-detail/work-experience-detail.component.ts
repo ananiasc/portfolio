@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { NgClass, NgFor, NgIf } from '@angular/common';
 import { Component, HostListener, signal } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 interface Experience {
@@ -14,7 +14,9 @@ interface Experience {
   selector: 'app-work-experience-detail',
   standalone: true,
   imports: [
-    CommonModule,
+    NgClass,
+    NgIf,
+    NgFor,
     TranslateModule, 
   ],
   templateUrl: './work-experience-detail.component.html'
