@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, HostListener, signal } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -12,14 +12,14 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './about-me-detail.component.html'
 })
 export class AboutMeDetailComponent {
-  showModal = signal(false);
+  showModal: boolean = false;
 
   public openModal(){
-    this.showModal.set(true);
+    this.showModal = true;
   }
 
   closeModal() {
-    this.showModal.set(false);
+    this.showModal = false;
   }
 
   closeModalOnOutSideClick(event: MouseEvent) {

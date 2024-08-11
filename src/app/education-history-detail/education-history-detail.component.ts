@@ -1,5 +1,5 @@
 import { NgClass, NgFor } from '@angular/common';
-import { Component, HostListener, signal } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 interface Education {
@@ -20,7 +20,7 @@ interface Education {
   templateUrl: './education-history-detail.component.html'
 })
 export class EducationHistoryDetailComponent {
-  showModal = signal(false);
+  showModal: boolean = false;
   educations: Education[] = [];
 
   constructor(
@@ -30,7 +30,7 @@ export class EducationHistoryDetailComponent {
   }
 
   public openModal(){
-    this.showModal.set(true);
+    this.showModal =true;
     this.updateByLanguage();
   }
 
@@ -41,7 +41,7 @@ export class EducationHistoryDetailComponent {
   }
 
   closeModal() {
-    this.showModal.set(false);
+    this.showModal = false;
   }
 
   closeModalOnOutSideClick(event: MouseEvent) {
