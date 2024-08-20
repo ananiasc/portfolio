@@ -11,19 +11,11 @@
   "skills": "Competências",
   "experiences": [
     {
-      "title": "Desenvolvedor Full Stack Freelancer",
-      "period": "Fevereiro 2024 – Hoje",
-      "companyName": "",
-      "companyDescription": "",
-      "experienceDescription": "Eu pude agregar valor realizando integração de meio de pagamento com cartão de crédito E-Rede para a empresa Elevar.",
-      "skills": "Desenvolvimento Java, Node.js, Angular (Framework), Angular Js, SQL Server, Spring Boot, Git, GitLab."
-    },
-    {
       "title": "Desenvolvedor Full Stack na Elevar",
-      "period": "Outubro 2022 – Janeiro 2024",
+      "period": "Outubro 2022 – Atualmente",
       "companyName": "Elevar Commerce",
       "companyDescription": "é uma empresa que oferece plataforma de e-commerce e soluções para ajudar negócios a expandir e ter sucesso online.",
-      "experienceDescription": "Pude contribuir com o desenvolvimento de promoções personalizadas, banners de seção trabalhando com Java, Angular e SQL Server, criação de micro serviço de frete melhorando a experiência do usuário através do Node documentado com Swagger e aprimorei os processos de entrega de software através de pipelines de Merge Request.",
+      "experienceDescription": "Pude contribuir com o desenvolvimento de promoções personalizadas, banners de seção trabalhando com Java, Angular e SQL Server, criação de micro serviço de frete melhorando a experiência do usuário através do Node documentado com Swagger e aprimorei os processos de entrega de software através de pipelines de Merge Request. Eu realizei integração métodos de pagamento com cartão de crédito E-Rede.",
       "skills": "Interface de programação de aplicativos (API), Java, Ionic Framework, Node.js, Git, API REST, Integração e entrega contínuas (CI/CD), Angular Js, Spring Boot, Angular (Framework), AngularJS, Microsoft SQL Server."
     },
     {

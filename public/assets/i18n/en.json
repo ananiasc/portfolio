@@ -11,20 +11,12 @@
   "skills": "Skills",
   "experiences": [
     {
-      "title": "Full Stack Developer Freelancer",
-      "period": "February 2024 – Present",
-      "companyName": "",
-      "companyDescription": "",
-      "experienceDescription": "I added value by integrating E-Rede credit card payment methods for Elevar.",
-      "skills": "Java Development, Node.js, Angular (Framework), AngularJS, SQL Server, Spring Boot, Git, GitLab."
-    },
-    {
       "title": "Full Stack Developer at Elevar",
-      "period": "October 2022 – January 2024",
+      "period": "October 2022 – Present",
       "companyName": "Elevar Commerce",
       "companyDescription": "is a company that offers an e-commerce platform and solutions to help businesses expand and succeed online.",
       "experienceDescription": "I contributed to the development of personalized promotions, section banners working with Java, Angular, and SQL Server, created a freight microservice improving user experience using Node documented with Swagger, and enhanced software delivery processes through Merge Request pipelines.",
-      "skills": "Application Programming Interface (API), Java, Ionic Framework, Node.js, Git, REST API, Continuous Integration and Continuous Delivery (CI/CD), AngularJS, Spring Boot, Angular (Framework), Microsoft SQL Server."
+      "skills": "Application Programming Interface (API), Java, Ionic Framework, Node.js, Git, REST API, Continuous Integration and Continuous Delivery (CI/CD), AngularJS, Spring Boot, Angular (Framework), Microsoft SQL Server. I have integrated payment methods with E-Rede credit card."
     },
     {
       "title": "Web Development Intern at Elevar",
