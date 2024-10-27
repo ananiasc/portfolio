@@ -11,8 +11,16 @@
   "skills": "Competências",
   "experiences": [
     {
+      "title": "Desenvolvedor Java na VILT",
+      "period": "Outubro 2024 – Atualmente",
+      "companyName": "VILT",
+      "companyDescription": "é uma empresa especializada em otimizar experiências do cliente e eficiência operacional em todos os setores do mundo.",
+      "experienceDescription": "Atuando em projetos Java.",
+      "skills": "Java, Git."
+    },
+    {
       "title": "Desenvolvedor Full Stack na Elevar",
-      "period": "Outubro 2022 – Atualmente",
+      "period": "Outubro 2022 – Outubro 2024",
       "companyName": "Elevar Commerce",
       "companyDescription": "é uma empresa que oferece plataforma de e-commerce e soluções para ajudar negócios a expandir e ter sucesso online.",
       "experienceDescription": "Pude contribuir com o desenvolvimento de promoções personalizadas, banners de seção trabalhando com Java, Angular e SQL Server, criação de micro serviço de frete melhorando a experiência do usuário através do Node documentado com Swagger e aprimorei os processos de entrega de software através de pipelines de Merge Request. Eu realizei integração métodos de pagamento com cartão de crédito E-Rede.",

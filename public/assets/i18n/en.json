@@ -11,8 +11,16 @@
   "skills": "Skills",
   "experiences": [
     {
-      "title": "Full Stack Developer at Elevar",
+      "title": "Java Developer at VILT",
       "period": "October 2022 – Present",
+      "companyName": "VILT",
+      "companyDescription": "is a company specializing in optimizing customer experiences and operational efficiency across industries worldwide",
+      "experienceDescription": "Working on Java projects.",
+      "skills": "Java, Git."
+    },
+    {
+      "title": "Full Stack Developer at Elevar",
+      "period": "October 2022 – October 2024",
       "companyName": "Elevar Commerce",
       "companyDescription": "is a company that offers an e-commerce platform and solutions to help businesses expand and succeed online.",
       "experienceDescription": "I contributed to the development of personalized promotions, section banners working with Java, Angular, and SQL Server, created a freight microservice improving user experience using Node documented with Swagger, and enhanced software delivery processes through Merge Request pipelines.",
