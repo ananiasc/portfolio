@@ -15,8 +15,8 @@
       "period": "October 2022 – Present",
       "companyName": "VILT",
       "companyDescription": "is a company specializing in optimizing customer experiences and operational efficiency across industries worldwide",
-      "experienceDescription": "Working on Java projects.",
-      "skills": "Java, Git."
+      "experienceDescription": "I am responsible for supporting a Java 8 WebSphere application in an On Premise environment and I work on modernizing it by taking it to a cloud environment with Open Liberty, modifying it to allow compatibility in this change, while maintaining the same behavior.",
+      "skills": "Java, Git, Open Liberty."
     },
     {
       "title": "Full Stack Developer at Elevar",

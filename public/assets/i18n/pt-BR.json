@@ -15,8 +15,8 @@
       "period": "Outubro 2024 – Atualmente",
       "companyName": "VILT",
       "companyDescription": "é uma empresa especializada em otimizar experiências do cliente e eficiência operacional em todos os setores do mundo.",
-      "experienceDescription": "Atuando em projetos Java.",
-      "skills": "Java, Git."
+      "experienceDescription": "Sou responsável pela sustentação de uma aplicação Java 8 WebSphere em ambiente On Premise e atuo na modernização levando ela para ambiente em nuvem com Open Liberty, modificando para permitir compatibilidade nessa mudança, mantendo o mesmo comportamento.",
+      "skills": "Java, Git, Open Liberty."
     },
     {
       "title": "Desenvolvedor Full Stack na Elevar",
